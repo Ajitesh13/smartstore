@@ -71,7 +71,10 @@ function App() {
             <Link to="/category/Shirts">Vegetables</Link>
           </li>
           <li>
-            <Link to="/category/Shirts">Eatables</Link>
+            <Link to="/category/Shirts">Edibles</Link>
+          </li>
+          <li>
+            <Link to="/category/Shirts">Cosmetics</Link>
           </li>
         </ul>
       </aside>
