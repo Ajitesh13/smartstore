@@ -34,7 +34,7 @@ function App() {
           <button onClick={openMenu}>
             &#9776;
           </button>
-          <Link to="/">amazona</Link>
+            <Link to="/" >MySmartStore</Link>
         </div>
         <div className="header-links navbar">
           <Link to="/cart">Cart</Link>
@@ -66,6 +66,12 @@ function App() {
           </li>
           <li>
             <Link to="/category/Shirts">Shirts</Link>
+          </li>
+          <li>
+            <Link to="/category/Shirts">Vegetables</Link>
+          </li>
+          <li>
+            <Link to="/category/Shirts">Eatables</Link>
           </li>
         </ul>
       </aside>

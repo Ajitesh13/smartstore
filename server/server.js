@@ -4,9 +4,10 @@ import bodyParser from 'body-parser';
 import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
 import orderRoute from './routes/orderRoute';
+import config from './config';
 
-const url = 'mongodb+srv://dev:dev678@ecom-cluster0-xjn8d.mongodb.net/test?retryWrites=true&w=majority';
-mongoose.connect(url,
+const mongodburl = config.MONGODB_URL
+mongoose.connect(mongodburl,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

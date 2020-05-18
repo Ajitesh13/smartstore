@@ -12,6 +12,11 @@ body{
   font-weight: bold;
 }
 
+.dropdown-cart {
+  position: relative;
+  display: inline-block;
+}
+
 button{
     font-size: 2rem;
     -webkit-appearance: button;
@@ -230,6 +235,10 @@ a:hover{
   text-align: center;
 }
 /* Cart */
+
+.button-cart-delete {
+  box-sizing: border-box;
+}
 
 .cart{
   display: flex;

@@ -41,12 +41,15 @@ function CartScreen(props) {
                                         </div>
                                         <div>
                                             Qty:
-                                            <select value={item.qty} onChange={(e) => dispatch(addToCart(item.product, e.target.value))}>
+                                            <select classname="" value={item.qty} onChange={(e) => dispatch(addToCart(item.product, e.target.value))}>
                                                 <option valu="1">1</option>
                                                 <option valu="2">2</option>
                                                 <option valu="3">3</option>
                                             </select>
-                                            <button type="button" className="button" onClick={() => removeFromCartHandler(item.product)} >
+                                            {
+                                                '  '
+                                            }
+                                            <button type="button" className="button-cart-delete" onClick={() => removeFromCartHandler(item.product)} >
                                                 Delete
                                             </button>
                                         </div>
