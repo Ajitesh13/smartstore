@@ -23,7 +23,6 @@ const reducer = combineReducers({
     orderPay: orderPayReducer,
     userUpdate: userUpdateReducer,
     myOrderList: myOrderListReducer,
-    myOrderList: myOrderListReducer,
     orderList: orderListReducer,
     orderDelete: orderDeleteReducer
 });

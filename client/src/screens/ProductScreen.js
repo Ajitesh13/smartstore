@@ -12,7 +12,7 @@ function ProductScreen(props) {
     useEffect(() => {
         dispatch(detailsProduct(props.match.params.id));
         return () => { };
-    }, [])
+    }, []);
 
     const handleAddtoCart = () => {
         props.history.push("/cart/" + props.match.params.id + "?qty=" + qty);
@@ -23,8 +23,8 @@ function ProductScreen(props) {
                 <Link to="/">Back to result</Link>
             </div>
             {
-                loading? <div>Loading...</div>:
-                error? <div>{ error } </div>:
+                loading ? <div>Loading...</div>:
+                error ? <div>{ error } </div>:
                 (
                     <div className="details">
                         <div className="details-image">
